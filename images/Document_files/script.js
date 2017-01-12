@@ -35,8 +35,7 @@ $(document).ready(function(){
   $jukebox.addEventListener('playing', function(){
     myJukeBox.displayTime();
   });
-  $jukebox.addEventListener('ended',function(e){
-    e.preventDefault();
+  $jukebox.addEventListener('ended',function(){
     console.log("song ended");
     myJukeBox.resetPlayer();
   });
@@ -134,10 +133,8 @@ function JukeBox(jukebox, songs, src){
     });
   };
   this.resetPlayer = function(){
-    console.log("resetting");
-    $('#songProgress').removeProp('right');
+    $('#songProgress').removeProperty('right');
     $('#songProgress').animate({left: '0px'},'fast');
-    console.log("yup, i resetted");
   };
   playUserPlaylist = function(userPlaylist){
     console.log("yeet");
@@ -180,7 +177,6 @@ function JukeBox(jukebox, songs, src){
     console.log("DURATION:: "+seconds);
 
     console.log(seconds);
-    $('#songProgress').removeProp('left');
     $('#songProgress').animate({right: '0px'}, seconds);
   };
 
