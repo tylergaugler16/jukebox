@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- <div id="playButton">Play</div>
+  <div id="pauseButton">Pause</div>
+  <div id="next">Next</div> -->
+  <div id="songInfo">
+    <h4>Track #</h4> <span id="songNumber">1</span>
+    <br>
+    <h4>Time: </h4><span id="currentTime">00:00</span>
+  </div>
+
+  <audio src="" id="jukebox"></audio>
+  <div id="musicPlayer">
+    <div id="controls">
+      <a href="#">  <i class="fa fa-step-backward fa-5x" aria-hidden="true" id="back"></i></a>
+      <a href="#"><i class="fa fa-play-circle fa-5x" aria-hidden="true" id="playButton"></i></a>
+      <a href="#"><i class="fa fa-pause-circle fa-5x" aria-hidden="true" id="pauseButton"></i></a>
+      <a href="#"><i class="fa fa-step-forward fa-5x" aria-hidden="true" id="next"></i></a>
+
+
+    </div>
+    <a href="#" id="playlistButton"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+    <div id="playlist">
+      <ul>
+        <a href="#">
+          <li id="1">track 1</li>
+        </a>
+        <a href="#">
+          <li id="2">track 2</li>
+        </a>
+        <a href="#">
+          <li id="3">track 3</li>
+        </a>
+        <a href="#">
+          <li id="4">track 4</li>
+        </a>
+        <a href="#">
+          <li id="5">track 5</li>
+        </a>
+        <a href="#">
+          <li id="6">track 6</li>
+        </a>
+        <a href="#">
+          <li id="7">track 7</li>
+        </a>
+        <a href="#">
+          <li id="8">track 8</li>
+        </a>
+        <a href="#">
+          <li id="9">track 9</li>
+        </a>
+        <a href="#">
+          <li id="10">track 10</li>
+        </a>
+      </ul>
+    </div>
+
+  </div>
+
+<div id="progressContainer">
+  <!-- <div id="songProgress"></div> -->
+  <i class="fa fa-bicycle" aria-hidden="true" id="songProgress"></i>
+</div>
+
+  <span id="thanksbro">Music: http://www.bensound.com</span>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
