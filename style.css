@@ -1,12 +1,4 @@
 
-/*#playButton, #pauseButton {
-  width: 100px;
-  height: 100px;
-  border-radius: 20%;
-  background-color: red;
-  padding: 30px;
-  color:white;
-}*/
 body{
   background-image: url('images/background.png');
   background-size: cover;
@@ -33,7 +25,6 @@ a{
   width: 57px;
 }
 #songInfo span{
-  /*margin-left: 10px;*/
   display: inline;
   color:white;
 }
@@ -112,7 +103,7 @@ a{
 #progressContainer{
   margin:0;
   height:20px;
-  width:30%;
+  width:425px;
   position: absolute;
   bottom:10px;
   background-color:rgba(0,0,0,0.7);
@@ -133,9 +124,9 @@ a{
   bottom:0;
   right:0;
 }
-.paused{
+/*.paused{
     -webkit-animation-play-state:paused;
     -moz-animation-play-state:paused;
     -o-animation-play-state:paused;
     animation-play-state:paused;
-}
+}*/
